@@ -1,6 +1,8 @@
 # WEB-GIS APPLICATION ACTIVITY (DATA-TIER)
 
-> Note: Fedora Linux installation process.
+> The program sets up a web-based geographical information system (GIS) using OpenLayers to display maps of Butuan City and Land Cover of the Philippines. It also allows users to interact with the map by providing information about specific geographic features when they click on the map.
+
+Note: Fedora Linux installation process.
 
 ### Dependencies
 
