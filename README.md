@@ -56,7 +56,9 @@ sudo systemctl start postgresql
 - [PgAdmin4](https://www.pgadmin.org/download/pgadmin-4-rpm/)
 
 ```
-sudo rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-redhat-repo-2-1.noarch.rpm
+sudo rpm -e pgadmin4-fedora-repo
+sudo rpm -e pgadmin4-redhat-repo
+sudo rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
 sudo yum install pgadmin4-web
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
@@ -64,8 +66,13 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 - Start pgadmin4-web
 
 ```
-sudo /usr/pgadmin4/bin/setup-web.sh
 systemctl status httpd
+```
+
+- Update pgadmin4-web
+
+```
+sudo yum upgrade pgadmin4-web
 ```
 
 #### Warning (If Error Found)
