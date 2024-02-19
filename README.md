@@ -64,7 +64,7 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 - Start pgadmin4-web
 
 ```
-/usr/pgadmin4/bin/setup-web.sh
+sudo /usr/pgadmin4/bin/setup-web.sh
 systemctl status httpd
 ```
 
