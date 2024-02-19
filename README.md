@@ -53,6 +53,14 @@ sudo postgresql-setup --initdb --unit postgresql
 sudo systemctl start postgresql
 ```
 
+#### Setup PostgreSQL
+```
+sudo -u postgres psql
+
+# change the password of the default user postgres (this will be used for creating server in pgadmin as username and password)
+postgres=# \password postgres 
+```
+
 - [PgAdmin4](https://www.pgadmin.org/download/pgadmin-4-rpm/)
 
 ```
@@ -95,6 +103,13 @@ local   all             all                                     peer
 host    all             all             127.0.0.1/32            md5
 # IPv6 local connections:
 host    all             all             ::1/128                 md5
+```
+
+##### Run command
+
+```
+sudo systemctl reload postgresql
+sudo systemctl restart postgresql
 ```
 
 ### PostGIS Installation
